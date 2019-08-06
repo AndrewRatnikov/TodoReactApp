@@ -1,6 +1,10 @@
 // Core
-import React, { FC } from "react";
+import React, { FC, Fragment } from "react";
 import styled from "styled-components";
+import { Reset } from "styled-reset";
+
+// Components
+import Header from "../Header";
 
 const MainWrapper = styled.div`
   display: flex;
@@ -12,7 +16,14 @@ const MainWrapper = styled.div`
 `;
 
 const App: FC = () => {
-  return <MainWrapper>TODO App</MainWrapper>;
+  return (
+    <Fragment>
+      <Reset />
+      <MainWrapper>
+        <Header />
+      </MainWrapper>
+    </Fragment>
+  );
 };
 
 export default App;
