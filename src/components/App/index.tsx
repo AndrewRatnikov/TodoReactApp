@@ -5,9 +5,11 @@ import { Reset } from "styled-reset";
 
 // Components
 import Header from "../Header";
+import TodoWrapper from "../TodoWrapper";
 
 const MainWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -21,6 +23,7 @@ const App: FC = () => {
       <Reset />
       <MainWrapper>
         <Header />
+        <TodoWrapper />
       </MainWrapper>
     </Fragment>
   );
