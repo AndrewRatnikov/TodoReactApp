@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { Reset } from "styled-reset";
 
 // Components
-import Header from "../Header";
-import TodoWrapper from "../TodoWrapper";
+import Header from "../components/Header";
+import TodoWrapper from "../components/TodoWrapper";
 
 const MainWrapper = styled.div`
   display: flex;
